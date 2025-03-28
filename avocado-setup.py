@@ -64,18 +64,6 @@ class Testsuite_status(Enum):
 count_result = {_.value: 0 for _ in Result}
 count_testsuites_status = {_.value: 0 for _ in Testsuite_status}
 
-
-class Result(Enum):
-    Testcount = "Total"
-    Pass = "pass"
-    Cancel = "cancel"
-    Error = "errors"
-    Failures = "failures"
-    Skip = "skip"
-    Warn = "warn"
-    Interrupt ="interrupt"
-
-count_result = { _.value : 0 for _ in Result}
 class TestSuite():
     """
         Class for Testsuite
